@@ -13,7 +13,7 @@ func main() {
 		log.Fatal("Connect Error!")
 	}
 	log.Println("连接数据库成功!")
-	rows, err := db.Query("select name  from test where id=1")
+	rows, err := db.Query(`select name  from test where id=1`)
 	//rows, err := db.Query("select version()")
 
 	if err != nil {
