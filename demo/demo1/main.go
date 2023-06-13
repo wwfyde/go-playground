@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-playground/example"
+	"github.com/wwfyde/go-playground/example"
 )
 
 func main() {

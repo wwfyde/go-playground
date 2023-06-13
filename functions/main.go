@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-playground/functions/recursive"
+	"github.com/wwfyde/go-playground/functions/recursive"
 )
 
 func MultiReturn(a, b int) (c, d int) {
