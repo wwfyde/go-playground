@@ -10,9 +10,14 @@ func Fib(n int) (res int) {
 
 func FibList(n int) (res []int) {
 	values := make([]int, n)
+	ch := make(chan int, n)
+
 	for i := range values {
-		res = append(res, Fib(i))
+		fib := Fib(i)
+		res = append(res, fib)
+		ch <- fib
 	}
+	close(ch)
 	return
 }
 
