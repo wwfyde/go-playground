@@ -1,7 +1,9 @@
 package main
 
 import (
+	"errors"
 	"fmt"
+	"reflect"
 )
 
 type MyError struct {
@@ -45,4 +47,6 @@ func main() {
 	} else {
 		fmt.Println("no error")
 	}
+	e := errors.New("demo")
+	fmt.Println("error type: ", reflect.TypeOf(e))
 }
